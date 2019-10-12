@@ -1,0 +1,3 @@
+This is one of my first projects when I started programming. I created this website using HTML, Bootstrap, and JavaScript.
+Because of my personal purpose, I made it for myself to use. I use 6 Jars Budgeting Method to spend money wisely.
+Hope you find it useful.
