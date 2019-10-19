@@ -112,7 +112,7 @@
     </main>
     <footer class="text-muted">
         <div class="container">
-            <p>&copy; 2019 by Tho Vu</p><span id="MyClockDisplay" class="clock" style='float: right' onload="showTime()"></span>
+            <p>&copy; 2019 by Tho Vu</p><span id="displayTime" class="clock" style='float: right' onload="showTime()"></span>
             <p> Tel: 819-319-9114 | Email <a href="mailto:vu000071@algonquinlive.com">vu000071@algonquinlive.com</a></p>
         </div>
 
@@ -131,11 +131,11 @@
 
         }
 
-        function showTime() {
+        function displayClock() {
             var date = new Date();
-            var h = date.getHours(); // 0 - 23
-            var m = date.getMinutes(); // 0 - 59
-            var s = date.getSeconds(); // 0 - 59
+            var h = date.getHours(); 
+            var m = date.getMinutes(); 
+            var s = date.getSeconds(); 
             var session = "AM";
 
             if (h == 0) {
@@ -152,14 +152,14 @@
             s = (s < 10) ? "0" + s : s;
 
             var time = h + ":" + m + ":" + s + " " + session;
-            document.getElementById("MyClockDisplay").innerText = time;
-            document.getElementById("MyClockDisplay").textContent = time;
+            document.getElementById("displayTime").innerText = time;
+            document.getElementById("displayTime").textContent = time;
 
-            setTimeout(showTime, 1000);
+            setTimeout(displayClock, 1000);
 
         }
 
-        showTime();
+        displayClock();
 
     </script>
 
