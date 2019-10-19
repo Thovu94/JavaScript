@@ -27,6 +27,11 @@
                 font-size: 3.5rem;
             }
         }
+        .clock {
+            color: #17D4FE;
+            font-size: 20px;
+            font-family: Orbitron;
+            
     </style>
     <!-- Custom styles for this template -->
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" />
