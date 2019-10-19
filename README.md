@@ -109,12 +109,10 @@
 </main>
   <footer class="text-muted">
         <div class="container">
-            <p>&copy; 2019 by Tho Vu</p>
+            <p>&copy; 2019 by Tho Vu</p><span id="displayTime" class="clock" style='float: right' onload="displayClock()"></span>
             <p> Tel: 819-319-9114 | Email <a href="mailto:vu000071@algonquinlive.com">vu000071@algonquinlive.com</a></p>
         </div>
     </footer>
-
-
     <script>
         function calculator() {
             var amount = parseInt(document.getElementById("amount").value)
@@ -125,8 +123,29 @@
             var fifth = parseInt(document.getElementById("fifth").value = (10 / 100) * amount)
             var sixth = parseInt(document.getElementById("sixth").value = (5 / 100) * amount)
         }
+        function displayClock() {
+            var date = new Date();
+            var h = date.getHours(); 
+            var m = date.getMinutes(); 
+            var s = date.getSeconds(); 
+            var session = "AM";
+            if (h == 0) {
+                h = 12;
+            }
+            if (h > 12) {
+                h = h - 12;
+                session = "PM";
+            }
+            h = (h < 10) ? "0" + h : h;
+            m = (m < 10) ? "0" + m : m;
+            s = (s < 10) ? "0" + s : s;
+            var time = h + ":" + m + ":" + s + " " + session;
+            document.getElementById("displayTime").innerText = time;
+            document.getElementById("displayTime").textContent = time;
+            setTimeout(displayClock, 1000);
+        }
+        displayClock();
     </script>
-
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
