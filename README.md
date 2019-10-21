@@ -22,28 +22,33 @@
             -ms-user-select: none;
             user-select: none;
         }
+
         @media (min-width: 768px) {
             .bd-placeholder-img-lg {
                 font-size: 3.5rem;
             }
         }
+
         .clock {
             color: #17D4FE;
             font-size: 20px;
             font-family: Orbitron;
         }
+
         .mapouter {
             position: relative;
             text-align: right;
             height: 230px;
             width: 230px;
         }
+
         .gmap_canvas {
             overflow: hidden;
             background: none !important;
             height: 280px;
             width: 280px;
         }
+
     </style>
     <!-- Custom styles for this template -->
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" />
@@ -137,20 +142,26 @@
     var m = date.getMinutes();
     var s = date.getSeconds();
     var session = "AM";
+
     if (h == 0) {
         h = 12;
     }
+
     if (h > 12) {
         h = h - 12;
         session = "PM";
     }
+
     h = (h < 10) ? "0" + h : h;
     m = (m < 10) ? "0" + m : m;
     s = (s < 10) ? "0" + s : s;
+
     var time = h + ":" + m + ":" + s + " " + session;
     document.getElementById("displayTime").innerText = time;
     document.getElementById("displayTime").textContent = time;
+
     setTimeout(displayClock, 1000);
+
 }
         </script>
     </footer>
