@@ -1,0 +1,27 @@
+.card {
+    border: 1px solid #acacac;
+    border-radius: 5px;
+    background-color: #fff;
+    margin: 2em auto;
+    height: 25vh;
+    width: 85vw;
+    max-width: 450px;
+    box-shadow: 2px 3px 4px black;
+}
+
+@media screen and (min-width: 451px) {
+    .card {
+        width: 44px;
+        float: left;
+        margin: 2em 5vw;
+    }
+}
+
+@media screen and (min-width: 551px) {
+    .card {
+        width: 34px;
+        color: red;
+        margin: 2em 2w;
+    }
+}
+
