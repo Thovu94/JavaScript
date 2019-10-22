@@ -30,8 +30,8 @@
         }
 
         .clock {
-            color: #17D4FE;
-            font-size: 20px;
+            color: #b36b00;
+            font-size: 1rem;
             font-family: Orbitron;
         }
 
