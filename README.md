@@ -72,7 +72,7 @@
                     <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">JavaScript</a>
+                    <a class="nav-link" href="https://github.com/Thovu94/JavaScriptLabs">JavaScript</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link disabled" href="login.html" tabindex="-1" aria-disabled="true">Login</a>
